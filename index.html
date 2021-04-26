@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>Hundred Thousand Streets | Toronto Canada</title>
+    <meta name="description" content="Hundred Thousand Streets is GTA's Premier vinyl wrap company. We offer full wraps, custom designs, racing stripes, hood wraps, roof wraps, paint-protection film, detailing and rust proof. We aim to inspire and nurture a culture of creativity and quality, while bringing inspiration and innovation to every person in the world through cars. A level of personalized innovation, creativity and detailed service from a trusted and experienced brand.">
+    <meta name="keywords" content="Car wrap, Vinyl wrap, Color Change, Headlight tints, Roof Wrap, Hood Wrap, Toronto, Brampton, Canada, GTA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="static/img/100-logo-img.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164224221-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164224221-1');
+    </script>
+
+</head>
+<style media="screen">
+.login-button{
+  align-content: center;
+  margin-left: 35%;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.logo{
+  width: 200px;
+  padding-bottom: 0px;
+  padding-top: 4%;
+}
+.htext{
+  font-size: 15px;
+  color: black;
+  font-weight: 0;
+  padding: ;
+
+  font-family: 'Laila', serif;
+
+}
+.ptext2{
+  font-size: 14px;
+  font-weight: 0;
+  color: white;
+
+  font-family: 'Laila', serif;
+  margin-top: 20px;
+
+}
+.ptext{
+  font-size: 10px;
+  font-weight: 0;
+
+
+  font-family: 'Laila', serif;
+
+}
+  body {
+  text-align: center;
+}
+html{
+  background-color: black;
+}
+.login {
+  font-family: 'Open Sans';
+  border: 1px solid #888;
+  display:inline-block;
+  background-color: #fafafa;
+  box-shadow: 1px 1px 10px #777;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.top {
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.middle {
+  font-size: 15px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 10px 10px 5px;
+  background-color: #eee;
+}
+
+.bottom {
+  font-size: 11px;
+  padding: 10px 20px;
+}
+
+.login-input {
+  padding: 1px 2px;
+  transition: outline .3s;
+}
+
+.error {
+  font-size: 12px;
+  background-color: #FFC2BD;
+  padding: 5px;
+  display: none;
+  border-radius: 2px;
+
+  vertical-align: middle;
+}
+
+.error-img {
+  width: 24px;
+  vertical-align: middle;
+}
+</style>
+<div class="top">
+  <img src="static/img/100-logo-img.png" class="logo"alt="">
+
+</div>
+<p class="ptext2">We're up to something, join us on Jun 11th 12am.</p>
+<div class="login">
+  <div class="top">
+
+  </div>
+  <div class="middle">
+    <table>
+      <tr>
+        <td><label for="username">Username</label></td>
+        <td><input class="login-input" id="username" type="text" autocomplete="off" /></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password</label></td>
+        <td><input class="login-input" id="password" type="password" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input class="login-button" type=submit value="Log In" /></td>
+      </tr>
+      <tr>
+        <td class="error" colspan="2">
+          <img class="error-img" src="https://cdn2.iconfinder.com/data/icons/dragonball-z-colored/48/Cartoons__Anime_Dragonball_Artboard_11-512.png" />
+
+          <span id="login-err-msg"></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="padding-top:20px;"class="bottom">
+
+    <span class="ptext">Copyright &copy; hundredthousandstreets. All Rights Reserved.</span>
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>s
+<script>
+  $('.login-button').click(function() {
+  var user = $('#username').val();
+  var pass = $('#password').val();
+
+  if (user != 'admin' && pass != 'password') {
+    $('#login-err-msg').html('Username & Password are Invalid');
+    $('.error').show('fast');
+  } else if (user != 'admin') {
+    $('#login-err-msg').html('Username is invalid');
+    $('.error').show('fast');
+  } else if (pass != 'password') {
+    $('#login-err-msg').html('Password is invalid');
+    $('.error').show('fast');
+  } else {
+    $('.error').hide('fast');
+  }
+  });
+</script>
+</html>
